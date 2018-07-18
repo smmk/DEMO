@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ pageTitle }}{{ data.sitename }}</title>
+<meta name="description" content="{{ data.description }}">
+<meta name="keywords" content="{{ data.keywords }}">
+{#- <link rel="canonical" href="https://store.wacoal.jp/ft/{{ data.dir }}/"> #}
+<!-- OGP -->
+<meta property="og:title" content="{{ pageTitle }}{{ data.sitename }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ data.url }}">
+<meta property="og:image" content="{{ data.keywords }}img/ogp.png?">
+<meta property="og:description" content="{{ data.description }}">
+{#- <meta property="fb:app_id" content="1488639804719704"> #}
+{#- <meta name="twitter:card" content="summary_large_image"> #}
+{#- <meta name="twitter:site" content="@Wacoal_webstore"> #}
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+{%- block css %}{% endblock %}
+</head>
+<body>
+{#- {% block header %}{% endblock %} #}
+<main class="main">
+{%- block contents %}{% endblock -%}
+</main>
+{#- {% block footer %}{% endblock %} #}
+<!-- js -->
+<script src="js/plugins.js?1807" charset="UTF-8"></script>
+<script src="js/scripts.js?1807" charset="UTF-8"></script>
+{%- block js %}{% endblock %}
+</body>
